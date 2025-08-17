@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join-now</title>
+    <style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header {
+        padding: 15px 30px;
+        border-bottom: 1px solid #ddd;
+    }
+    .logo{
+        width: 40px;
+    }
+    .create{
+        text-align: center;
+        margin: 40px 20px;
+        font-family: Arial, sans-serif;
+    }
+    .create h4{
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #6c6c6c;
+        margin-bottom: 15px;
+        margin-top: 50px;
+        text-transform: uppercase;
+    }
+    .create p{
+        font-size: 15px;
+        color: #555;
+        max-width: 500px;
+        margin: 0 auto;
+        line-height: 1.5;
+    }
+    .create a{
+        color: #1e3932;
+        text-decoration: underline;
+        font-weight: 500;
+    }
+    .container {
+        max-width: 500px;
+        height: 1000px;
+        margin: auto;
+        padding: 30px;
+        border: 1px solid #ddd;
+        border-radius: 14px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    input[type="text"],
+    input[type="password"] {
+        width: 90%;
+        display: block;
+        text-align: left;
+        margin: 20px  5px;
+        padding: 10px 10px;
+        border: 1px solid #aaa;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+    .link a{
+        display: block;
+        margin-top: 10px;
+        color: #008248;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    .checkbox-container {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .checkbox-container input {
+        margin-right: 10px;
+    }
+
+    .checkbox-container a {
+        font-size: 14px;
+        color: #008248;
+        text-decoration: underline;
+    }
+    .join-button {
+        background:  1px #008248;
+        color: white;
+        float: right;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 60px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    /* Footer */
+.footer {
+  background-color: #f9f9f9;
+  padding: 20px 20px;
+  border-block-start: 1px rgba(0, 0, 0, 0.168) solid;
+}
+
+.nav .flex1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hidden1, .hidden2, .hidden3, .hidden4, .hidden5 {
+  flex: 1 1 25px;
+}
+
+h2 {
+  font-size: 15px;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #6c6c6c;      
+}
+li a:hover {
+  text-decoration:underline
+}
+
+@media screen and (max-width: 768px) {
+  .flex1 {
+    flex-direction: column;
+  }
+
+  .expander1, .expander2, .expander3, .expander4, .expander5 {
+    display: none;
+    padding-left: 15px;
+  }
+
+  .button1::after,
+  .button2::after,
+  .button3::after,
+  .button4::after,
+  .button5::after {
+    content: "▼";
+    float: right;
+    transition: transform 0.3s ease;
+  }
+
+  .active::after {
+    transform: rotate(180deg);
+  }
+
+  .active + .expander1,
+  .active + .expander2,
+  .active + .expander3,
+  .active + .expander4,
+  .active + .expander5 {
+    display: block;
+  }
+}
+
+/*li-logo*/
+.lilogo{
+  text-align: left;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.li-logo {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.li-logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.text-logo {
+  margin: 5px 0;
+}
+
+.text-logo a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  flex: 1 1 25px;
+}
+
+.p2025 {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+@media (min-width: 768px) {
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .li-logo {
+    margin: 0 10px;
+  }
+
+  .text-logo {
+    margin: 0 10px;
+    float: left;
+  }
+
+  p {
+    width: 100%;
+  }
+}
+@media (min-width: 600px) {
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .li-logo {
+    margin: 0 10px;
+  }
+
+  .text-logo {
+    margin: 0 10px;
+    float: left;
+  }
+
+  p {
+    width: 100%;
+  }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logo.png" class="logo" onclick="document.location='Index.html'">
+        </div>
+    </header>
+
+    <div class="create">
+        <h2>Create an account</h2>
+        <h4>Starbucks® Rewards</h4>
+        <P>Join Starbucks Rewards to earn Stars for free food and drinks, any way you pay. Get access to mobile ordering, a birthday Reward, <a href="Index.html">more</a>.</P> 
+    </div>
+
+    <div class="container">
+        <p>* indicates required field</p>
+        <h5 style="margin-left: 9px;">Personal Information</h5>
+        <form>
+            <input type="text" placeholder="*First name" required>
+            <input type="text" placeholder="*Last anme"  required>
+        <br>
+        
+        <h5 style="margin-left: 9px;">Account Security</h5>
+            <input type="text" placeholder="*Email address" required>
+            <p style="font-size: 12px;margin-left: 20px;">This will be your Username</p>
+
+            <input type="password" placeholder="*Password">
+            <p style="font-size: 12px;margin-left: 20px;">Create a password 8 to 25 characters long thatincludes at least 1 uppercase and 1 lowercase letter, 1 number and 1 special character like an exclamation point or asterisk</p>
+        <br>
+        <br>   
+            <div class="link">
+                <a href="#">Already have a Starbucks gift card?</a>
+            </div>
+        <br>
+        <h4 style="color: #6c6c6c;text-transform: uppercase">Collect more Stars & Earn Rewards</h4>
+        <p>Email is a great way to know about offers and what’s new from Starbucks.</p>
+        
+            <div class="checkbox-container">
+                <input type="checkbox" checked>
+                <span>Yes, I'd like email from Starbucks</span>
+            </div>
+        <p style="font-size: 12px;margin-left: 20px;color: #6c6c6c;text-align: uppercase">Know about initiatives, announcements and product offers.</p>
+        <h4 style="color: #6c6c6c;text-transform: uppercase">TERMS OF USE</h4>
+        
+            <div class="checkbox-container">
+                <input type="checkbox" checked>
+                <span> I agree to the <a href="Starbucks® Rewards Terms">Starbucks® Rewards Terms</a>and the <a href="Starbucks Card Terms">Starbucks Card Terms</a>
+                and have read the <a href="Starbucks Privacy Statement.">Starbucks Privacy Statement.</a></span>
+            </div>
+        <button type="join" class="join-button">Create account</button>    
+        </form>
+    </div>
+  <br><br>
+  <div>
+    <footer class="footer">
+      <nav class="nav">
+        <div class="flex1">
+          <div class="hidden1">
+            <h2 class="header1">
+              <button class="button1">
+                <span>About Us</span>
+              </button>
+            </h2>
+            <div class="expander1">
+              <div class="div1">
+                <ul class="ul1">
+                  <li class="li1">
+                    <a href="#">Our Company</a>
+                    <a href="#">Our Coffee</a>
+                    <a href="#">About starbusks</a>
+                    <a href="#">Starbucks Archive</a>
+                    <a href="#">Investor Relations </a>
+                    <a href="#">Customer service</a>
+                    <a href="#">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="hidden2">
+            <h2 class="header2">
+              <button class="button2">
+                <span>Careers</span>
+              </button>
+            </h2>
+            <div class="expander2">
+              <div class="div2">
+                <ul class="ul1">
+                  <li class="li1">
+                    <a href="#">Culture and Values</a>
+                    <a href="#">Belonging at starbucks</a>
+                    <a href="#">College Achievement Plan</a>
+                    <a href="#">Alumni Community</a>
+                    <a href="#">U.S. Careers</a>
+                    <a href="#">International Careers</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="hidden3">
+            <h2 class="header3">
+              <button class="button3">
+                <span>Social Impact</span>
+              </button>
+            </h2>
+            <div class="expander3">
+              <div class="div3">
+                <ul class="ul3">
+                  <li class="li3">
+                    <a href="#">Communities</a>
+                    <a href="#">Starbucks Foundation</a>
+                    <a href="#">sustainability</a>
+                    <a href="#">Enviromental and social Impact Reporting</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="hidden4">
+            <h2 class="header4">
+              <button class="button4">
+                <span>For Business Partners</span>
+              </button>
+            </h2>
+            <div class="expander4">
+              <div class="div4">
+                <ul class="ul4">
+                  <li class="li4">
+                    <a href="#">Landlord Support Center</a>
+                    <a href="#">Suppliers</a>
+                    <a href="#">Corporate Gift Card Sales</a>
+                    <a href="#">Office and Foodservivce Coffee</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="hidden5">
+            <h2 class="header5">
+              <button class="button5">
+                <span>Order and Pick Up</span>
+              </button>
+            </h2>
+            <div class="expander5">
+              <div class="div5">
+                <ul class="ul5">
+                  <li class="li5">
+                    <a href="#">Order on the app</a>
+                    <a href="#">Order on the Web</a>
+                    <a href="#">Delivery</a>
+                    <a href="#">Order and Pick Up Options</a>
+                    <a href="#">Explore and Find Coffee for Home</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <script>
+            document.querySelectorAll("button").forEach((btn) => {
+              btn.addEventListener("click", function () {
+                btn.classList.toggle("active");
+
+                const expander = btn.parentElement.nextElementSibling;
+                if (expander.style.display === "block") {
+                  expander.style.display = "none";
+                } else {
+                  expander.style.display = "block";
+                }
+              });
+            });
+          </script>
+        <div class="li">
+          <ul>
+            <li class="li-logo"><a href="https://open.spotify.com/user/starbucks"></a><img src="https://img.icons8.com/?size=100&id=99983&format=png&color=000000" alt=""></li>
+            <li class="li-logo"><a href=" https://web.facebook.com/Starbucks/"></a><img src="https://img.icons8.com/?size=100&id=118466&format=png&color=000000"  alt=""></li>
+            <li class="li-logo"><a href="https://www.pinterest.com/starbucks/"></a><img src="https://img.icons8.com/?size=100&id=11101&format=png&color=000000" alt=""></li>
+            <li class="li-logo"><a href="https://www.instagram.com/starbucks/"></a><img src="https://img.icons8.com/?size=100&id=dz63urxyxSdO&format=png&color=000000" alt=""></li>
+            <li class="li-logo"><a href="https://www.youtube.com/starbucks"></a><img src="https://img.icons8.com/?size=100&id=62852&format=png&color=000000" alt=""></li>
+            <li class="li-logo"><a href="https://x.com/starbucks/"></a><img src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=000000" alt=""></li>
+          </ul>
+          <ul>
+            <li class="text-logo"><a href="#">Privacy Notice</a></li>
+            <li class="text-logo"><a href="#">Consumer Health Privacy Notice</a></li>
+            <li class="text-logo"><a href="#">Term of Use</a></li>
+            <li class="text-logo"><a href="#">Do Not Share My Personal Information</a></li>
+            <li class="text-logo"><a href="#">CA Supply Chain Act</a></li>
+            <li class="text-logo"><a href="#">Accessibility</a></li>
+            <li class="text-logo"><a href="#">Cookie Preferences</a></li>
+          </ul>
+          <p class="p2025">© 2025 Starbucks Coffee Company. All rights reserved.</p>
+        </div>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>

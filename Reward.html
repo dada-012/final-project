@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewards</title>
+    <link rel="stylesheet" href="reward.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="left-section">
+            <img src="logo.png" class="logo" onclick="document.location='Index.html'">
+            <nav class="nav-links">
+                <a href="Menu.html">MENU</a>
+                <a href="Reward.html">REWARDS</a>
+                <a href="Gift.html">GIFT CARDS</a>
+            </nav>
+        </div>
+        
+        <div class="right-section">
+            <button class="sign-in" onclick="document.location='signin.html'">Sign in</button>
+            <button class="join-now" onclick="document.location='joinnow.html'">Join now</button>
+        </div>
+    </header>
+
+    <div class="sticky">STARBUCKS® REWAEDS</div>
+
+    <div class="container">
+        <div class="row2">
+            <div class="column2">
+                <h2 class="xlarge-font">It’s a great day for <br> free coffee</h2>
+                <p class="large-font">Sign up and start enjoying the perks of Starbucks® Rewards.</p>
+                <button class="button" onclick="document.location='joinnow.html'">Join now</button>
+                <p>It's even better <a href="#">with the app</a></p>
+            </div>
+            <div class="column-2">
+                <img src="	https://www.starbucks.com/weblx/images/rewards/hero/rewards-hero.png" >
+            </div>
+        </div>
+    </div>
+
+    <div class="textcolumn3">
+        <h2>Getting started is easy</h2>
+        <p>Earn Stars and get rewarded in a few easy steps.</p>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg-4">
+            <img class="rounded-circle" src="https://www.starbucks.com/weblx/images/rewards/getting-started/getting-started-1@2x.jpg" width="90" height="90">
+            <h4>Create an account</h4>
+            <p>To get started,<a class="btn btn-secondary" href="#" role="button">join now</a>. You can also <a class="btn btn-secondary" href="#" role="button">Join in the app</a> to get access to the full range of Starbucks® Rewards benefits.</p>
+        </div>
+        <div class="col-lg-4">
+            <img class="rounded-circle" src="https://www.starbucks.com/weblx/images/rewards/getting-started/getting-started-2@2x.jpg" alt="Generic placeholder image" width="90" height="90">
+            <h4>Order and pay how you’d like</h4>
+            <p>Use cash, credit/debit card or save some time and pay right through the app. You’ll collect Stars all ways. <a class="btn btn-secondary" href="#" role="button"> Learn how</a></p>
+        </div>
+        <div class="col-lg-4">
+            <img class="rounded-circle" src="https://www.starbucks.com/weblx/images/rewards/getting-started/getting-started-3@2x.jpg" alt="Generic placeholder image" width="90" height="90">
+            <h4>Earn Stars, get Rewards</h4>
+            <p>As you earn Stars, you can redeem them for Rewards—like free food, drinks, and more. Start redeeming with as little as 25 Stars!.</p>
+        </div>
+    </div>
+
+    <div class="column4">
+        <div>
+            <h2>Get your favorites for free</h2>
+        </div>
+        <div class="topnav">
+            <span class="tablinks" onclick="opendrink(event, '25')">25★</span>
+            <span class="tablinks" onclick="opendrink(event, '100')">100★</span>
+            <span class="tablinks" onclick="opendrink(event, '200')">200★</span>
+            <span class="tablinks" onclick="opendrink(event, '300')">300★</span>
+            <span class="tablinks" onclick="opendrink(event, '400')">400★</span>
+        </div>
+    </div>
+
+    <div id="25" class="tabcontent" style="background-color: #d4e9e2;">
+        <div class="row3">
+            <div class="column-5">
+                <img src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/25.png" alt="">
+            </div>
+            <div class="column5">
+                <h3>Customize your drink</h3>
+                <p>Make your drink just right with an extra espresso shot or a dash of your favorite syrup.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="100" class="tabcontent" style="background-color: #d4e9e2;">
+        <div class="row3">
+            <div class="column-5">
+              <img src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/100.png" alt="">  
+            </div>
+            <div class="column5">
+                <h3>Brewed hot or iced coffee or tea, bakery item, packaged snack and more</h3>
+                <p>Treat yourself to an iced coffee, buttery croissant, bag of chips and more.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="200" class="tabcontent" style="background-color: #d4e9e2;">
+        <div class="row3">
+            <div class="column-5">
+                <img src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/200.png" alt="">
+            </div>
+            <div class="column5">
+                <h3>Handcrafted drink (Cold Brew, lattes and more) or hot breakfast</h3>
+                <p>Turn good mornings great with a delicious handcrafted drink of your choice, breakfast sandwich or oatmeal on us.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="300" class="tabcontent" style="background-color: #d4e9e2;">
+        <div class="row3">
+            <div class="column-5">
+                <img src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/300.png" alt="">
+            </div>
+            <div class="column5">
+                <h3>Sandwich, protein box or at-home coffee</h3>
+                <p>Enjoy a PM pick-me-up with a lunch sandwich, protein box or a bag of coffee—including Starbucks VIA Instant®.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="400" class="tabcontent" style="background-color: #d4e9e2;">
+        <div class="row3">
+            <div class="column-5">
+                <img src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/400.png" alt="">
+            </div>
+            <div class="column5">
+                <h3>Select Starbucks® merchandise</h3>
+                <p>Take home a signature cup, drink tumbler or your choice of coffee merch up to $20.</p>
+            </div>
+        </div>
+    </div>
+
+<script>
+    function opendrink(evt, drinkName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(drinkName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+</script>
+
+    <div class="textcolumn3">
+        <h2>Endless Extras</h2>
+        <p>Joining Starbucks® Rewards means unlocking access to benefits like quick and easy ordering, <br> tasty Rewards and—yes, free coffee.</p>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg-4">
+            <img class="rounded-circle" src="https://www.starbucks.com/weblx/images/rewards/benefits/1-fun-freebies.jpg" width="90" height="90">
+            <h4>Fun freebies</h4>
+            <p> Not only can you earn free food, drinks and more, look forward to a birthday treat on us.<a class="btn btn-secondary" href="#" role="button"> Learn more</a></p>
+        </div>
+        <div class="col-lg-4">
+            <img class="rounded-circle" src="https://www.starbucks.com/weblx/images/rewards/benefits/2-order-and-pay-ahead.jpg" alt="Generic placeholder image" width="90" height="90">
+            <h4>Order & pay ahead</h4>
+            <p>Master the art of ordering ahead with saved favorites and payment methods. <a class="btn btn-secondary" href="#" role="button"> Learn more</a></p>
+        </div>
+        <div class="col-lg-4">
+            <img class="rounded-circle" src="https://www.starbucks.com/weblx/images/rewards/benefits/3-get-to-free-faster.jpg" alt="Generic placeholder image" width="90" height="90">
+            <h4>Get to free faster</h4>
+            <p>Earn Stars even quicker with Bonus Star challenges, Double Star Days and exciting games. <a class="btn btn-secondary" href="#" role="button"> Learn more</a></p>
+        </div>
+    </div>
+
+<div style="background-color: rgb(237, 238, 240);">
+    <div class="textcolumn6" >
+        <h2>Cash or card, you earn Stars</h2>
+        <p>No matter how you pay, you can earn Stars with your morning coffee. Those Stars add up to (really delicious) Rewards.</p>
+    
+        <div class="row6">
+            <div class="text6">
+                <h4>1★ Star per dollar</h4>
+                <p>Pay as you go</p>
+            </div>
+            <div>
+                <img  class="pic6" src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/1A.png" width="70" height="70">
+                <h4 class="col-lg-6" >Scan and pay separately</h4>
+                <p class="col-lg-6" >Use cash or credit/debit card at the register.</p>
+            </div>
+            <div>
+                <img  class="pic6" src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/1B.png" width="70" height="70">
+                <h4 class="col-lg-6">Save payment in the app</h4>
+                <p class="col-lg-6" >Check-out faster by saving a credit/debit card or PayPal to your account. <br>You’ll be able to order ahead or scan and pay at the register in one step.</p>
+            </div>
+    </div>
+    <hr style="width: 73%;">
+    <div  class="textcolumn6" >
+        <div class="row6">
+            <div class="text6">
+                <h4>2★ Star per dollar</h4>
+                <p>Add funds in the app</p>
+            </div>
+            <div>
+                <img  class="pic6" src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/2A.png" width="70" height="70">
+                <h4 class="col-lg-6" >Preload</h4>
+                <p class="col-lg-6" >To save time and earn Stars twice as fast,<br> add money to your digital Starbucks Card using any payment option. <br>Scan and pay in one step or order ahead in the app.</p>
+            </div>
+            <div>
+                <img  class="pic6" src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/2B.png" width="70" height="70">
+                <h4 class="col-lg-6">register your gift Card</h4>
+                <p class="col-lg-6" >Then use it to pay through the app. <br>You can even consolidate balances from multiple cards in one place.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <div style="background-color: darkgreen;"><br>
+    <div class="co7">
+        <div class="textcolumn7">
+            <h2>Keep the Rewards Coming</h2>
+            <p>The Rewards don't stop at your morning coffee. Join Starbucks® Rewards and unlock perks from our partners, all while earning more Stars</p>
+        </div>
+    
+        <div class="row7">
+            <div class="col-lg-7">
+                <img src="https://www.starbucks.com/weblx/images/rewards/loyalty-partnerships/delta-skymiles.png" width="90" height="90">
+                <p><a class="btn btn-secondary" Link your Delta SkyMiles®, opens in new window class="sb-external-link--link items-center color-greenStarbucks" href="https://www.deltastarbucks.com/content/starbucks/en/overview.html?mkcpgn=dipd-sbux7042" rel="noopener noreferrer" target="_blank"><span class="mr1 sb-external-link--text">Link your Delta SkyMiles®</span><svg aria-hidden="true" class="valign-middle " focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="width: 18px; height: 18px; overflow: visible; fill: currentcolor;"><path d="M14.5003 3.30018C14.0861 3.30021 13.7503 3.63602 13.7504 4.05024C13.7504 4.46445 14.0862 4.80021 14.5004 4.80018L17.7958 4.79994L11.2981 11.2976C11.0052 11.5905 11.0052 12.0654 11.2981 12.3583C11.591 12.6512 12.0659 12.6512 12.3588 12.3583L18.8566 5.86046V8.99966C18.8566 9.41388 19.1924 9.74966 19.6066 9.74966C20.0208 9.74966 20.3566 9.41388 20.3566 8.99966V4.0498C20.3566 3.85088 20.2776 3.66011 20.1369 3.51945C19.9963 3.3788 19.8055 3.29979 19.6065 3.2998L14.5003 3.30018Z"></path><path d="M6 3.99966H12V5.49966H6C5.72386 5.49966 5.5 5.72352 5.5 5.99966V17.9997C5.5 18.2758 5.72386 18.4997 6 18.4997H18C18.2761 18.4997 18.5 18.2758 18.5 17.9997V11.2497H20V17.9997C20 19.1042 19.1046 19.9997 18 19.9997H6C4.89543 19.9997 4 19.1042 4 17.9997V5.99966C4 4.89509 4.89543 3.99966 6 3.99966Z"></path></svg></a></a> and Starbucks® Rewards accounts to earn miles on Starbucks Card reloads of $25 or more, plus Double Stars on travel days.1</p>
+            </div>  
+            <div class="col-lg-7">
+                <img src="https://www.starbucks.com/weblx/images/rewards/loyalty-partnerships/bank-of-america.png " width="90" height="90">
+                <p class="pl3 text-left md-pt4 md-pl0 md-text-center"><a aria-label="Link your Bank of America, opens in new window" class="sb-external-link--link items-center color-greenStarbucks" href="https://promotions.bankofamerica.com/starbucks?cm_mmc=ESZ-EnterpriseSales-_-Cobrand_Site-_-ES35LT0004_StarbucksRewardsModuleBofA_SRModuleBofA-_-StarbucksPartnerMktg" rel="noopener noreferrer" target="_blank"><span class="mr1 sb-external-link--text">Link your Bank of America</span><svg aria-hidden="true" class="valign-middle " focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="width: 18px; height: 18px; overflow: visible; fill: currentcolor;"><path d="M14.5003 3.30018C14.0861 3.30021 13.7503 3.63602 13.7504 4.05024C13.7504 4.46445 14.0862 4.80021 14.5004 4.80018L17.7958 4.79994L11.2981 11.2976C11.0052 11.5905 11.0052 12.0654 11.2981 12.3583C11.591 12.6512 12.0659 12.6512 12.3588 12.3583L18.8566 5.86046V8.99966C18.8566 9.41388 19.1924 9.74966 19.6066 9.74966C20.0208 9.74966 20.3566 9.41388 20.3566 8.99966V4.0498C20.3566 3.85088 20.2776 3.66011 20.1369 3.51945C19.9963 3.3788 19.8055 3.29979 19.6065 3.2998L14.5003 3.30018Z"></path><path d="M6 3.99966H12V5.49966H6C5.72386 5.49966 5.5 5.72352 5.5 5.99966V17.9997C5.5 18.2758 5.72386 18.4997 6 18.4997H18C18.2761 18.4997 18.5 18.2758 18.5 17.9997V11.2497H20V17.9997C20 19.1042 19.1046 19.9997 18 19.9997H6C4.89543 19.9997 4 19.1042 4 17.9997V5.99966C4 4.89509 4.89543 3.99966 6 3.99966Z"></path></svg></a> eligible card and Starbucks® Rewards account to earn 2% Cash Back and Bonus Stars on qualifying Starbucks in-app purchases.<a aria-labelledby="disclaimerTitleId" class="text-noUnderline target___dtVO1" href="#bankOfAmericaTermDescriptionId" id="bankOfAmericaNoteId"><sup>2</sup></a></p> </p>
+            </div>
+            <div class="col-lg-7">
+                <img src="pic2.png" alt="" style="width: 90px; height: 90px;">
+                <p><a href="#">Link your Marriott marriott bonvoy</a>and Starbucks® Rewards accounts to earn Double Stars during eligible stays, points during any Marriott Bonvoy Week and more.3</p>
+            </div>
+        </div>
+        <div class="text-content7">
+            <span>
+                <a href="joinnow.html">Join Starbucks Reward</a>
+            </span>
+        </div>
+    </div><br>
+  </div>
+
+    <div class="column8">
+        <div class="text-column8">
+            <h2>Questions?</h2>
+            <p>We want to help in any way we can. You can ask your barista anytime or we’ve answered <br> the most commonly asked terms <a aria-label="right over here, opens in new window" class="sb-external-link--link items-center color-greenStarbucks" href="https://customerservice.starbucks.com/app/answers/list/p/552" rel="noopener noreferrer" target="_blank"><span class="mr1 sb-external-link--text">right over here</span><svg aria-hidden="true" class="valign-middle " focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="width: 18px; height: 18px; overflow: visible; fill: currentcolor;"><path d="M14.5003 3.30018C14.0861 3.30021 13.7503 3.63602 13.7504 4.05024C13.7504 4.46445 14.0862 4.80021 14.5004 4.80018L17.7958 4.79994L11.2981 11.2976C11.0052 11.5905 11.0052 12.0654 11.2981 12.3583C11.591 12.6512 12.0659 12.6512 12.3588 12.3583L18.8566 5.86046V8.99966C18.8566 9.41388 19.1924 9.74966 19.6066 9.74966C20.0208 9.74966 20.3566 9.41388 20.3566 8.99966V4.0498C20.3566 3.85088 20.2776 3.66011 20.1369 3.51945C19.9963 3.3788 19.8055 3.29979 19.6065 3.2998L14.5003 3.30018Z"></path><path d="M6 3.99966H12V5.49966H6C5.72386 5.49966 5.5 5.72352 5.5 5.99966V17.9997C5.5 18.2758 5.72386 18.4997 6 18.4997H18C18.2761 18.4997 18.5 18.2758 18.5 17.9997V11.2497H20V17.9997C20 19.1042 19.1046 19.9997 18 19.9997H6C4.89543 19.9997 4 19.1042 4 17.9997V5.99966C4 4.89509 4.89543 3.99966 6 3.99966Z"></path></svg></a>.</p>
+        </div>
+    </div>
+    
+  <div>
+    <footer class="footer">
+      <nav class="nav">
+        <div class="flex1">
+          <div class="hidden1">
+            <h2 class="header1">
+              <button class="button1">
+                <span>About Us</span>
+              </button>
+            </h2>
+            <div class="expander1">
+              <div class="div1">
+                <ul class="ul1">
+                  <li class="li1">
+                    <a href="#">Our Company</a>
+                    <a href="#">Our Coffee</a>
+                    <a href="#">About starbusks</a>
+                    <a href="#">Starbucks Archive</a>
+                    <a href="#">Investor Relations </a>
+                    <a href="#">Customer service</a>
+                    <a href="#">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="hidden2">
+            <h2 class="header2">
+              <button class="button2">
+                <span>Careers</span>
+              </button>
+            </h2>
+            <div class="expander2">
+              <div class="div2">
+                <ul class="ul2">
+                  <li class="li2">
+                    <a href="#">Culture and Values</a>
+                    <a href="#">Belonging at starbucks</a>
+                    <a href="#">College Achievement Plan</a>
+                    <a href="#">Alumni Community</a>
+                    <a href="#">U.S. Careers</a>
+                    <a href="#">International Careers</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="hidden3">
+            <h2 class="header3">
+              <button class="button3">
+                <span>Social Impact</span>
+              </button>
+            </h2>
+            <div class="expander3">
+              <div class="div3">
+                <ul class="ul3">
+                  <li class="li3">
+                    <a href="#">Communities</a>
+                    <a href="#">Starbucks Foundation</a>
+                    <a href="#">sustainability</a>
+                    <a href="#">Enviromental and social Impact Reporting</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="hidden4">
+            <h2 class="header4">
+              <button class="button4">
+                <span>For Business Partners</span>
+              </button>
+            </h2>
+            <div class="expander4">
+              <div class="div4">
+                <ul class="ul4">
+                  <li class="li4">
+                    <a href="#">Landlord Support Center</a>
+                    <a href="#">Suppliers</a>
+                    <a href="#">Corporate Gift Card Sales</a>
+                    <a href="#">Office and Foodservivce Coffee</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="hidden5">
+            <h2 class="header5">
+              <button class="button5">
+                <span>Order and Pick Up</span>
+              </button>
+            </h2>
+            <div class="expander5">
+              <div class="div5">
+                <ul class="ul5">
+                  <li class="li5">
+                    <a href="#">Order on the app</a>
+                    <a href="#">Order on the Web</a>
+                    <a href="#">Delivery</a>
+                    <a href="#">Order and Pick Up Options</a>
+                    <a href="#">Explore and Find Coffee for Home</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <script>
+            document.querySelectorAll("button").forEach((btn) => {
+              btn.addEventListener("click", function () {
+                btn.classList.toggle("active");
+
+                const expander = btn.parentElement.nextElementSibling;
+                if (expander.style.display === "block") {
+                  expander.style.display = "none";
+                } else {
+                  expander.style.display = "block";
+                }
+              });
+            });
+          </script>
+    
+        <div class="li">
+          <ul>
+            <li class="li-logo"><a href="https://open.spotify.com/user/starbucks"></a><img src="https://img.icons8.com/?size=100&id=99983&format=png&color=000000" alt=""></li>
+            <li class="li-logo"><a href=" https://web.facebook.com/Starbucks/"></a><img src="https://img.icons8.com/?size=100&id=118466&format=png&color=000000"  alt=""></li>
+            <li class="li-logo"><a href="https://www.pinterest.com/starbucks/"></a><img src="https://img.icons8.com/?size=100&id=11101&format=png&color=000000" alt=""></li>
+            <li class="li-logo"><a href="https://www.instagram.com/starbucks/"></a><img src="https://img.icons8.com/?size=100&id=dz63urxyxSdO&format=png&color=000000" alt=""></li>
+            <li class="li-logo"><a href="https://www.youtube.com/starbucks"></a><img src="https://img.icons8.com/?size=100&id=62852&format=png&color=000000" alt=""></li>
+            <li class="li-logo"><a href="https://x.com/starbucks/"></a><img src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=000000" alt=""></li>
+          </ul>
+          <ul>
+            <li class="text-logo"><a href="#">Privacy Notice</a></li>
+            <li class="text-logo"><a href="#">Consumer Health Privacy Notice</a></li>
+            <li class="text-logo"><a href="#">Term of Use</a></li>
+            <li class="text-logo"><a href="#">Do Not Share My Personal Information</a></li>
+            <li class="text-logo"><a href="#">CA Supply Chain Act</a></li>
+            <li class="text-logo"><a href="#">Accessibility</a></li>
+            <li class="text-logo"><a href="#">Cookie Preferences</a></li>
+          </ul>
+          <p class="p2025">© 2025 Starbucks Coffee Company. All rights reserved.</p>
+        </div>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>
